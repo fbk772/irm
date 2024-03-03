@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikatan Remaja Mesjid</title>
+    
+    <!-- Tambahkan link CSS Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <nav  class="green">
+        <div class="nav-wrapper container">
+            <a href="#!" class="brand-logo">Ikatan Remaja Mesjid</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"><img src="and.png" style="width: 20px; height: 20px;"></i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li>
+                <a class="dropdown-trigger" href="#" data-target="dropdown1">Menu<i class="material-icons right"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+  <!-- Dropdown Structure -->
+  <ul id="dropdown1" class="dropdown-content">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+    <!-- Side Navigation (Mobile) -->
+    <ul class="sidenav" id="mobile-demo">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+   <!-- Contact Us -->
+    <div class="container scrollspy" id="Contact">
+        <div class="center">
+            <div class="col s12">
+                <h3>Hubungi Kami</h3>
+            </div>
+        </div>
+            <div class="col s12 m6 center">
+                <h5>Kontak Informasi</h5>
+                <p>Email: <a href="mailto:ap3002316@gmail.com" style="color: black;">ap3002316@gmail.com</a></p>
+                <p>Phone: <a href="https://wa.me/089602592382" style="color: black;">089602592382</a></p>
+                <p>Address: <a href="https://www.google.com/maps/place/Gg.+Al-+Mut+Aqin,+Langgini,+Kec.+Bangkinang,+Kabupaten+Kampar,+Riau+28463/@0.3314084,101.0161468,17z/data=!3m1!4b1!4m6!3m5!1s0x31d5150711f504a5:0x7167506919856f20!8m2!3d0.331403!4d101.0187217!16s%2Fg%2F11c1nr3dy5?entry=ttu" style="color: black;">Langgini, Bangkinang, Kampar Regency, Riau 28463</a></p>
+                <p>Donasi: <a href="https://trakteer.id/kitakawa_iko_%28iko%29/tip" style="color: black;">Trakteer</a></p>
+            </div>
+
+    
+    <!-- Copyright -->
+    <div class="copyright center white">
+        <p>&copy; 2024 IKM Website</p>
+    </div>
+
+
+    <!-- Tambahkan script Materialize JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Inisialisasi elemen Materialize, termasuk slider dan sidenav -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            M.AutoInit();
+            var slider = document.querySelectorAll('.slider');
+            M.Slider.init(slider, {
+                indicators: false,
+                height: 400,
+                duration: 500,
+                interval: 3000
+            });
+            var sideNav = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(sideNav);
+            var parallax = document.querySelectorAll('.parallax');
+            M.Parallax.init(parallax);
+            var scrollSpy = document.querySelectorAll('.scrollspy');
+            M.ScrollSpy.init(scrollSpy, {
+            scrollOffset: 3
+            });
+        });
+    </script>
+
+
+</body>
+</html>
+ 
