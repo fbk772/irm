@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami</title>
+    
+    <!-- Tambahkan link CSS Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <nav  class="green">
+        <div class="nav-wrapper container">
+            <a href="#!" class="brand-logo">Tentang Kami</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"><img src="and.png" style="width: 20px; height: 20px;"></i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li>
+                <a class="dropdown-trigger" href="#" data-target="dropdown1">Menu<i class="material-icons right"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+  <!-- Dropdown Structure -->
+  <ul id="dropdown1" class="dropdown-content">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+    <!-- Side Navigation (Mobile) -->
+    <ul class="sidenav" id="mobile-demo">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="container">
+            <div class="col s12 m6">
+                <h3 id="Tentang" class="scrollspy" align="center">Sedikit Tentang Kami</h3>
+                <p>Selamat datang di Remaja Mesjid, sebuah komunitas yang didedikasikan untuk membangun koneksi spiritual di kalangan remaja. Kami berkomitmen untuk menciptakan lingkungan yang mendukung pertumbuhan iman, pembelajaran, dan pengembangan pribadi.
+
+                Remaja Mesjid hadir sebagai wadah bagi para remaja untuk mengeksplorasi nilai-nilai keagamaan, memperdalam pemahaman terhadap ajaran Islam, dan membangun persaudaraan yang kokoh. Kami mengakui bahwa remaja merupakan aset berharga bagi masa depan umat, dan melalui kegiatan-kegiatan kami, kami berusaha membimbing mereka agar menjadi pribadi yang beriman, berintegritas, dan berkontribusi positif kepada masyarakat.
+
+                Dalam setiap langkah perjalanan spiritual mereka, Remaja Mesjid menyediakan platform untuk berdiskusi, berbagi pengalaman, dan tumbuh bersama sebagai komunitas yang solid. Kami berupaya memberikan inspirasi dan dukungan yang dibutuhkan untuk menghadapi tantangan sehari-hari, sambil tetap memperkuat ikatan dengan Tuhan.
+
+                Bergabunglah dengan kami di Remaja Mesjid, di mana setiap langkah kecil menuju kebaikan dihargai, dan setiap perjalanan spiritual dihormati. Mari bersama-sama membentuk masa depan yang lebih cerah, berdasarkan nilai-nilai keimanan dan kebersamaan.</p>
+            </div>
+    </div>
+>
+    
+    <!-- Copyright -->
+    <div style="height:200px;" class="copyright center white">
+        <p>&copy; 2024 IKM Website</p>
+    </div>
+
+
+    <!-- Tambahkan script Materialize JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Inisialisasi elemen Materialize, termasuk slider dan sidenav -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            M.AutoInit();
+            var slider = document.querySelectorAll('.slider');
+            M.Slider.init(slider, {
+                indicators: false,
+                height: 400,
+                duration: 500,
+                interval: 3000
+            });
+            var sideNav = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(sideNav);
+            var parallax = document.querySelectorAll('.parallax');
+            M.Parallax.init(parallax);
+            var scrollSpy = document.querySelectorAll('.scrollspy');
+            M.ScrollSpy.init(scrollSpy, {
+            scrollOffset: 3
+            });
+        });
+    </script>
+
+
+</body>
+</html>
+ 
